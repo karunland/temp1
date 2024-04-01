@@ -2,7 +2,7 @@
 
 public static class Solution
 {
-    // main branchindeki degisiklik
+    // uzaktaki makineden yorum satiri
     public static int LargestAltitude(int[] gain)
     {
         var nm = new List<int>();
