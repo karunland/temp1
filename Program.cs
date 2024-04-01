@@ -2,6 +2,7 @@
 
 public static class Solution
 {
+    // uzaktaki makineden yorum satiri
     public static int LargestAltitude(int[] gain)
     {
         var nm = new List<int>();
