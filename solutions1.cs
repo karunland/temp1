@@ -2,6 +2,7 @@ using System.Text.RegularExpressions;
 
 public class solutions1
 {
+    // move zero fonksiyonu
     public static void MoveZeroes(int[] nums)
     {
         var aa = new List<int>();
