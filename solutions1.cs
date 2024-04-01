@@ -1,8 +1,13 @@
+using System.Net;
 using System.Text.RegularExpressions;
 
 public class solutions1
 {
     // move zero fonksiyonu
+    // create two sum fonk
+    // create merge alternately fonk
+    // create gcd of strings fonk
+    // create kids with candies fonk
     public static void MoveZeroes(int[] nums)
     {
         var aa = new List<int>();
@@ -97,6 +102,29 @@ public class solutions1
         }
 
         return n != 0 ? false : true;
+    }
+
+    // create func that show djikstra algorithm
+    public static int FindTheDistanceValue(int[] arr1, int[] arr2, int d)
+    {
+        var count = 0;
+        for (int i = 0; i < arr1.Length; i++)
+        {
+            var flag = true;
+            for (int j = 0; j < arr2.Length; j++)
+            {
+                if (Math.Abs(arr1[i] - arr2[j]) <= d)
+                {
+                    flag = false;
+                    break;
+                }
+            }
+
+            if (flag)
+                count++;
+        }
+
+        return count;
     }
 
 
